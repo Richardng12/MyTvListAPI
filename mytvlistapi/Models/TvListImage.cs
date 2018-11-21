@@ -11,6 +11,7 @@ namespace mytvlistapi.Models
         public string Title { get; set; }
         public string Tags { get; set; }
         public string Score { get; set; }
+        public string Author { get; set; }
         public IFormFile Image { get; set; }
     }
 }
