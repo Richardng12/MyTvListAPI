@@ -34,6 +34,7 @@ namespace mytvlistapi.Models
                         Height = "432",
                         Progress = "3/200",
                         Priority = "High",
+                        Author = "Richard",
                     }
 
 

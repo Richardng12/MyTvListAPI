@@ -33,17 +33,22 @@ namespace mytvlistapi.Controllers
         {
             return _context.TvItem;
         }
-
-
         // GET: api/TvList/Tags
-        [Route("tags")]
-        [HttpGet]
-        public async Task<List<string>> GetTags()
-        {
-            var list = (from m in _context.TvItem
-                         select m.Tags).Distinct();
 
-            var returned = await list.ToListAsync();
+        [HttpGet]
+        [Route("tag")]
+        public async Task<List<TvItem>> GetTagsItem([FromQuery] string tags)
+        {
+            var list = from m in _context.TvItem
+                        select m; //get all the tv shows
+
+
+            if (!String.IsNullOrEmpty(tags)) //make sure user gave a tag to search
+            {
+                list = list.Where(s => s.Tags.ToLower().Equals(tags.ToLower())); // find the entries with the search tag and reassign
+            }
+
+            var returned = await list.ToListAsync(); //return the tv shows
 
             return returned;
         }
@@ -71,6 +76,7 @@ namespace mytvlistapi.Controllers
                     tvItem.Title = Tvimage.Title;
                     tvItem.Tags = Tvimage.Tags;
                     tvItem.Score = Tvimage.Score;
+                    tvItem.Author = Tvimage.Author;
 
                     System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
                     tvItem.Height = image.Height.ToString();
