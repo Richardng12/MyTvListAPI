@@ -78,6 +78,7 @@ namespace mytvlistapi.Controllers
                     tvItem.Score = Tvimage.Score;
                     tvItem.Comments = Tvimage.Comments;
                     tvItem.Author = Tvimage.Author;
+                    tvItem.Authentication = Tvimage.Authentication;
 
                     System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
                     tvItem.Height = image.Height.ToString();

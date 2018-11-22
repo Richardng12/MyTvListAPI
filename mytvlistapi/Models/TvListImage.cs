@@ -13,6 +13,7 @@ namespace mytvlistapi.Models
         public string Score { get; set; }
         public string Comments { get; set; }
         public string Author { get; set; }
+        public string Authentication { get; set; }
         public IFormFile Image { get; set; }
     }
 }

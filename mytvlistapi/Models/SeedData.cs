@@ -35,7 +35,8 @@ namespace mytvlistapi.Models
                         Progress = "3/200",
                         Priority = "High",
                         Comments = "hi",
-                        Author = "Richard"
+                        Author = "Richard",
+                        Authentication = "asdf234"
                     }
 
 

@@ -20,6 +20,7 @@ namespace mytvlistapi.Models
         public string Priority { get; set; }
         public string Comments { get; set; }
         public string Author { get; set; }
+        public string Authentication { get; set; }
   
     }
 }
