@@ -53,3 +53,4 @@ C:\Users\richa\Desktop\GitHub\MSAAssignment2\mytvlistapi\MyTvListAPI\mytvlistapi
 C:\Users\richa\Desktop\GitHub\MSAAssignment2\mytvlistapi\MyTvListAPI\mytvlistapi\obj\Debug\netcoreapp2.1\mytvlistapi.RazorTargetAssemblyInfo.cache
 C:\Users\richa\Desktop\GitHub\MSAAssignment2\mytvlistapi\MyTvListAPI\mytvlistapi\obj\Debug\netcoreapp2.1\mytvlistapi.dll
 C:\Users\richa\Desktop\GitHub\MSAAssignment2\mytvlistapi\MyTvListAPI\mytvlistapi\obj\Debug\netcoreapp2.1\mytvlistapi.pdb
+C:\Users\richa\Desktop\GitHub\MSAAssignment2\mytvlistapi\MyTvListAPI\mytvlistapi\obj\Debug\netcoreapp2.1\mytvlistapi.csprojAssemblyReference.cache

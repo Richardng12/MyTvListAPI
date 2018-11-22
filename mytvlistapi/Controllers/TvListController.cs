@@ -76,7 +76,7 @@ namespace mytvlistapi.Controllers
                     tvItem.Title = Tvimage.Title;
                     tvItem.Tags = Tvimage.Tags;
                     tvItem.Score = Tvimage.Score;
-            
+                    tvItem.Comments = Tvimage.Comments;
 
                     System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
                     tvItem.Height = image.Height.ToString();
